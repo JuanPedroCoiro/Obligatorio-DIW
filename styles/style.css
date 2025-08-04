@@ -1,0 +1,356 @@
+:root {
+  --primary-color: #191970 /*#77DD77*/;
+  --secondary-color: #ffffff;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*CLASES GENERALES*/
+
+.logo {
+  max-width: 100px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.boton2 {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  margin-left: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.boton2:hover {
+  color: var(--secondary-color);
+  background-color: black;
+}
+
+.boton1 {
+  background-color: skyblue;
+  color: var(--secondary-color);
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.boton1:hover {
+  color: var(--secondary-color);
+  background-color: black;
+}
+
+.fondo-blanco {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.fondo-azul {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*ESTILOS HEADER*/
+header {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header ul {
+  margin-right: 2vh;
+}
+
+header ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 10px;
+}
+header ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+header ul li a:hover {
+  border-top: 2px solid var(--primary-color);
+}
+
+/*Estilos de seccion Welcome*/
+#inicio {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/montaña.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--secondary-color);
+  justify-content: flex-end;
+}
+
+#inicio p {
+  max-width: 75%;
+}
+
+#inicio a {
+  margin-bottom: 25px;
+}
+
+/*ESTILOS SECCION DESCUBRIR*/
+
+#descubrir {
+  padding-bottom: 5vh;
+  padding-top: 2rem;
+}
+
+#descubrir article {
+  max-width: 40vh;
+  max-height: 100vh;
+  margin: 10px;
+  border: 2px solid var(--primary-color);
+}
+
+#descubrir article img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#descubrir article p {
+  max-width: 350px;
+  padding: 10px;
+  margin-top: -15px;
+}
+
+/*GRID SECCION EXPLORAR*/
+
+.dos-columnas1 {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  gap: 2%;
+}
+
+.dos-columnas2 {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 5px;
+}
+
+.dos-filas {
+  display: grid;
+  grid-template-rows: auto auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  gap: 20px;
+}
+
+#explorar {
+  /*height: 120vh;*/
+  min-height: 100%;
+  padding-bottom: 2%;
+  padding-top: 2rem;
+}
+
+.miami {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  width: 100%;
+  gap: 1%;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.miami div{
+    padding-left: 8px;
+}
+.miami img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.miami div h3{
+  margin-left: 5px;
+}
+
+.disney {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.disney img {
+  width: 100%;
+  max-height: 370px;
+  object-fit: cover;
+}
+
+.gran-canion{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.gran-canion img {
+  width: 100%;
+  height: auto;
+}
+
+.gran-canion h3,p{
+    padding: 5px;
+}
+
+.titulo-explorar {
+  margin-left: 10%;
+  padding-top: 5px;
+}
+
+.titulo-explorar p {
+  margin-left: -5px;
+}
+
+/*ESTILOS RESERVAR*/
+#reservar {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#reservar p {
+  max-width: 80%;
+  margin-left: -5px;
+}
+
+form {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+#datosUsuario {
+  display: flex;
+  flex-direction: column;
+}
+
+#datosUsuario input{
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  border-radius: 2px;
+}
+#datosUsuario input:focus{
+  outline: none;
+  border-bottom: 1px solid green;
+  background-color: lightblue;
+}
+#base{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.recibir-info{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.recibir-info button{
+  width: 80px;
+  border-radius: 5px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+table{
+  width: 80%;
+  border-collapse: collapse;
+}
+
+table th, td{
+  border: 1px solid var(--primary-color)
+}
+
+th, td{
+  padding: 5px;
+}
+tr:nth-child(even){
+  background-color: lightblue;
+}
+
+th{
+  background-color: lightblue;
+}
+
+
+/*ESTILOS SECCION OFERTAS*/
+#ofertas {
+  align-items: center;
+  margin-bottom: 2px;
+  margin-top: 10px;
+}
+
+#ofertas div {
+  max-width: 400px;
+  margin: 30px;
+}
+
+
+#ofertas figure img {
+  max-width: 400px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+#ofertas p{
+  margin-left: -5px;
+}
+
+#ofertas div a{
+  margin-top: 5px;
+}
+
+/*FOOTER*/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.redes {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+.redes img {
+  max-width: 50px;
+}

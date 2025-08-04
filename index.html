@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expedia</title>
+    <!--Link a hoja de estilos-->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!--Link de google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER CON MENÚ DE NAVEGACIÓN-->
+    <header>
+      <img src="images/logo.png" alt="logo de Expedia" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#descubrir">Descubrir</a></li>
+          <li><a href="#explorar">Explorar</a></li>
+          <li><a href="#reservar">Reservar</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- SECCIÓN INICIO-->
+      <section id="inicio" class="flex-center">
+        <h1>Bienvenido a los Estados Unidos</h1>
+        <p>
+          ¡Descubre las maravillas de Estados Unidos! Desde las vibrantes calles
+          de Nueva York hasta la belleza natural del Gran Cañón, EE. UU. ofrece
+          aventuras sin fin para cada viajero. Ya sea que quieras explorar
+          lugares icónicos como la Estatua de la Libertad, disfrutar de las
+          soleadas playas de Florida o vivir la vida nocturna en Las Vegas, este
+          es el destino perfecto para tus próximas vacaciones inolvidables.
+          Reserva ahora y embárcate en un viaje a través de ciudades de clase
+          mundial, impresionantes parques nacionales y experiencias culturales
+          únicas.
+        </p>
+        <a
+          class="boton1"
+          target="_blank"
+          href="https://www.expedia.com/?locale=en_US&siteid=1&semcid=US.B.GOOGLE.BT-c-EN.GT&semdtl=a118255096950.b1143063384553.g1kwd-12670071.e1c.m1Cj0KCQjwpP63BhDYARIsAOQkATY6Y1R_kjlWFIjQG3At0YD1R5mIT5O8v79daIuNA_zq_DX6CSdTVisaAkr0EALw_wcB.r186c5ceb1813f82e09a3d77e1d04605e5d07dc63d3419b29b7e84c18818d0c03e.c12Pt3zIutmfP_UEmNzk9qhg.j19219266.k1.d1624928452209.h1e.i1.l1.n1.o1.p1.q1.s1.t1.x1.f1.u1.v1.w1&gad_source=1&gclid=Cj0KCQjwpP63BhDYARIsAOQkATY6Y1R_kjlWFIjQG3At0YD1R5mIT5O8v79daIuNA_zq_DX6CSdTVisaAkr0EALw_wcB"
+          >Más Info</a
+        >
+      </section>
+      <!-- SECCIÓN CON 4 ELEMENTOS-->
+      <section class="fondo-blanco flex-center" id="descubrir">
+        <h2>Descubrí tu nueva estadía favorita</h2>
+        <p>
+          Se bienvenido a algunos de los destinos más deseados en todo el mundo.
+          Todo en el mismo país!
+        </p>
+        <div class="flex-row">
+          <article class="flex-center">
+            <img src="images/spa.jpg" alt="Interior de un spa" />
+            <h3>Spa</h3>
+            <p>
+              Unas vacaciones en un spa son el refugio perfecto para escapar de
+              la vida diaria. Puedes disfrutar de relajantes masajes,
+              tratamientos faciales y desintoxicantes en un entorno tranquilo.
+            </p>
+          </article>
+          <article class="flex-center">
+            <img src="images/cabaña.jpg" alt="Cabaña en el bosque" />
+            <h3>Cabaña</h3>
+            <p>
+              Unas vacaciones en una cabaña ofrecen una escapada acogedora en
+              plena naturaleza. Rodeado de árboles y aire fresco, puedes
+              relajarte junto a la chimenea o explorar el entorno al aire libre.
+            </p>
+          </article>
+          <article class="flex-center">
+            <img
+              src="images/resort3.jpg"
+              alt="Imagen de un resort tomada desde el cielo"
+            />
+            <h3>Resort</h3>
+            <p>
+              Unas vacaciones en un resort ofrecen lujo y conveniencia en un
+              solo lugar. Con piscinas, restaurantes de alta cocina y una
+              variedad interminable de actividades a tu disposición.
+            </p>
+          </article>
+          <article class="flex-center">
+            <img src="images/hottub2.jpg" alt="Bañera con agua caliente" />
+            <h3>Jacuzzi</h3>
+            <p>
+              Unas vacaciones con jacuzzi ofrecen un retiro relajante. Ya sea
+              bajo las estrellas o rodeado de naturaleza, sumergirse en agua
+              tibia y burbujeante hace desaparecer el estrés.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!--SECCIÓN CON GRID -->
+      <section id="explorar" class="fondo-azul">
+        <div class="titulo-explorar">
+          <h2>Explora los destinos más solicitados</h2>
+          <p>
+            Los destinos más solicitados del turismo en los Estados Unidos a un
+            precio único.
+          </p>
+        </div>
+        <div class="dos-filas">
+          <div class="dos-columnas1">
+            <article class="dos-columnas2 disney">
+              <img src="images/torreDisney.jpg" alt="Castillo de disney" />
+              <div>
+                <h3>Disneyland</h3>
+                <p>
+                  ¡Ven y disfruta de una experiencia inolvidable en familia en
+                  el parque de atracciones más espectacular del mundo! Vive
+                  momentos mágicos mientras exploras un universo lleno de
+                  diversión, donde la emoción y la aventura te esperan en cada
+                  rincón. Descubre un mundo de fantasía como nunca antes, donde
+                  los sueños cobran vida y puedes conocer en persona a Mickey y
+                  todos sus queridos amigos.
+                </p>
+              </div>
+            </article>
+            <article class="gran-canion">
+              <img
+                src="images/granCanion.jpg"
+                alt="El gran canion iluminado por el sol del atardecer"
+              />
+              <h3>El Gran Canion</h3>
+              <p>
+                Haste presente en una de las maravillas del mundo natural. Un
+                paisaje imponente como no vas a encontrar en ningún otro lugar.
+              </p>
+            </article>
+          </div>
+          <article class="miami">
+            <div>
+              <h3>Miami</h3>
+              <p>
+                Ideal para un escape en pareja o con amigos. El sol, la playa y
+                la vida nocturna de Miami son ideales si lo que estás buscando
+                es divertirte y relajarte.
+              </p>
+            </div>
+            <img
+              src="images/miami.jpg"
+              alt="Costa de miami vista desde el cielo"
+            />
+            <img src="images/miamiFondo2.jpg" alt="Canal de miami" />
+          </article>
+        </div>
+      </section>
+      <!--Sección con Form-->
+      <section id="reservar" class="fondo-blanco">
+        <div>
+          <h2>Reserva tu próximo viaje</h2>
+          <p>
+            Los datos solicitados van a ser utilizados para contactarte via
+            email. También puedes marcar la casilla y te estaremos enviando
+            información acerca de las ultimas promociones y nuevos destinos
+            disponibles.
+          </p>
+          <form action="" method="post">
+            <fieldset id="datosUsuario">
+              <label for="nombre">Nombre*</label>
+              <input type="text" id="nombre" required />
+
+              <label for="email">Mail*</label>
+              <input type="email" id="email" required />
+
+              <label for="fecha-salida">Fecha Salida*</label>
+              <input type="date" id="fecha-salida" required />
+
+              <label for="fecha-regreso">Fecha Regreso</label>
+              <input type="date" id="fecha-regreso" />
+            </fieldset>
+
+            <legend>Seleccione tipo de vuelo:</legend>
+            <fieldset id="base">
+              <label for="base-simple">
+                <input type="radio" id="base-simple" name="tipo-base" checked />
+                Simple
+              </label>
+              <label for="base-doble">
+                <input type="radio" id="base-doble" name="tipo-base" />
+                Doble
+              </label>
+              <label for="base-triple">
+                <input type="radio" id="base-triple" name="tipo-base"/>
+                Triple
+              </label>
+            </fieldset>
+
+            <label for="comentarios">Comentario*</label>
+            <textarea
+              id="comentarios"
+              rows="4"
+              required
+            ></textarea>
+
+            <div class="recibir-info">
+              <label for="informacion">
+                <input type="checkbox" id="informacion"/>
+                Deseo recibir información
+              </label>
+  
+              <button type="submit">Enviar</button>
+            </div>
+            
+          </form>
+        </div>
+        <table>
+          <caption>Precios de los vuelos:</caption>
+          <thead>
+            <tr>
+              <th>Destino</th>
+              <th>Simple</th>
+              <th>Doble</th>
+              <th>Triple</th>
+            </tr>
+            <tbody>
+              <tr>
+                <td>Los Angeles</td>
+                <td>$250</td>
+                <td>$375</td>
+                <td>$500</td>
+              </tr>
+              <tr>
+                <td>Nueva York</td>
+                <td>$250</td>
+                <td>$375</td>
+                <td>$500</td>
+              </tr>
+              <tr>
+                <td>El Gran Canion</td>
+                <td>$350</td>
+                <td>$475</td>
+                <td>$600</td>
+              </tr>
+              <tr>
+                <td>Miami</td>
+                <td>$100</td>
+                <td>$125</td>
+                <td>$200</td>
+              </tr>
+              <tr>
+                <td>Disney</td>
+                <td>$50</td>
+                <td>$75</td>
+                <td>$120</td>
+              </tr>
+              <tr>
+                <td>El Gran Canion</td>
+                <td>$100</td>
+                <td>$125</td>
+                <td>$200</td>
+              </tr>
+              <tr>
+                <td>Las Vegas</td>
+                <td>$200</td>
+                <td>$325</td>
+                <td>$400</td>
+              </tr>
+            </tbody>
+          </thead>
+        </table>
+      </section>
+      <!--SECCION OFERTAS-->
+      <section class="Ofertas flex-row fondo-azul" id="ofertas">
+        <div>
+          <h2>Ahorra en tus proximas vacaciones</h2>
+          <p>
+            Ahorra un 25 % en tus próximas vacaciones a Los Ángeles. Si eres
+            miembro Prime, también puedes acceder a más descuentos y a muchos
+            más beneficios.
+          </p>
+          <a
+            class="boton1"
+            href="https://www.expedia.com/Flights"
+            target="_blank"
+            >Comprar</a
+          >
+          <a class="boton2" href="https://www.expedia.com/deals" target="_blank"
+            >Prime</a
+          >
+        </div>
+        <figure>
+          <img
+            src="images/losAngeles.jpg"
+            alt="La ciudad de Los Angeles al amanecer"
+          />
+        </figure>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+      <img class="logo" src="images/logo.png" alt="logo de Expedia" />
+      <nav class="redes">
+        <a href=""><img src="images/twitter.png" alt="Logo de twitter" /></a>
+        <a href=""><img src="images/facebook.png" alt="Logo de facebook" /></a>
+        <a href=""><img src="images/youtube.png" alt="Logo de youtube" /></a>
+      </nav>
+    </footer>
+  </body>
+</html>
